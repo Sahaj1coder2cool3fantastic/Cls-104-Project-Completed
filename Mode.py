@@ -10,11 +10,19 @@ for i in range(len(file_data)):
     n_num= file_data[i][1]
     new_data.append((n_num))
 data = Counter(new_data)
-mode_data_for_range = {"80-90":0, "90-100":0, "100-110":0}
-for height,occurance in data.items():
-    if 80<float(height)<90:
-        mode_data_for_range["80-90"]=mode_data_for_range["80-90"] + occurence
-    elif 90<float(height)<100:
-        mode_data_for_range["90-100"]=mode_data_for_range["90-100"] + occurence
-    elif 100<float(height)<110:
-        mode_data_for_range["100-110"]=mode_data_for_range["100-110"] + occurence
+mode_data_for_range = {"75-85":0, "85-95":0, "95-105":0, "105-115":0, "115-125":0, "125-135":0, "135-145":0}
+for height, occurance in data.items():
+    if 75<float(height)<85:
+        mode_data_for_range["75-85"]=mode_data_for_range["75-85"] + occurence
+    elif 85<float(height)<95:
+        mode_data_for_range["85-95"]=mode_data_for_range["85-95"] + occurence
+    elif 95<float(height)<105:
+        mode_data_for_range["95-105"]=mode_data_for_range["95-105"] + occurence
+    elif 105<float(height)<115:
+        mode_data_for_range["100-115"]=mode_data_for_range["100-115"] + occurence
+    elif 115<float(height)<125:
+        mode_data_for_range["115-125"]=mode_data_for_range["115-125"] + occurence
+    elif 125<float(height)<135:
+        mode_data_for_range["125-135"]=mode_data_for_range["125-135"] + occurence
+    elif 135<float(height)<145:
+        mode_data_for_range["135-145"]=mode_data_for_range["135-145"] + occurence
